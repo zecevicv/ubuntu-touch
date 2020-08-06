@@ -1,0 +1,120 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  margin-top: auto;
+  .container {
+    display: flex;
+
+    @media (min-width: 1300px) {
+      max-width: $container-large;
+    }
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  // Footer Top
+  &-top {
+    background-color: $off-white;
+    padding: 15px 0 20px 0;
+
+    @media (max-width: 991px) {
+      padding: 30px 0;
+    }
+
+    // Logo
+    .footer-logo {
+      margin-right: 50px;
+
+      @media (max-width: 1199px) {
+        margin-right: 20px;
+      }
+
+      @media (max-width: 991px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 180px;
+      }
+    }
+
+    // Text
+    .footer-text {
+      max-width: 380px;
+      margin-top: auto;
+
+      @media (max-width: 991px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    // Social
+    .footer-social {
+      margin-left: auto;
+
+      @media (max-width: 991px) {
+        margin-left: 0;
+      }
+
+      p {
+        margin-bottom: 30px;
+        font-size: 13px;
+
+        @media (max-width: 991px) {
+          margin-bottom: 20px;
+        }
+      }
+
+      ul {
+        display: flex;
+
+        li:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  // Footer Bottom
+  &-bottom {
+    padding: 15px 0 30px 0;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+
+    .container {
+      justify-content: flex-start;
+
+      @media (max-width: 1199px) {
+        flex-direction: column;
+      }
+    }
+
+    p {
+      font-size: 13px;
+
+      &:first-child {
+        @media (max-width: 767px) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    span {
+      margin: 0 10px;
+
+      @media (max-width: 1199px) {
+        margin: 0 5px;
+      }
+    }
+  }
+}

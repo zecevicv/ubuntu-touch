@@ -1,0 +1,478 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid $gray-light;
+  padding: 30px 0;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 1300px) {
+      max-width: $container-large;
+    }
+  }
+
+  // Header Logo
+  &-logo {
+    img {
+      width: 200px;
+    }
+  }
+
+  // Header Nav
+  &-nav {
+
+    @media (max-width: 991px) {
+      position: fixed;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+
+      max-height: calc(100% - 90px);
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .container {
+      @media (min-width: 992px) {
+        padding: 0;
+      }
+    }
+    
+    .container > .collapse,
+    .container > .collapsing {
+      @media (min-width: 992px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+      }
+
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+
+    // Header Dropdown
+    .header-dropdown {
+      margin-right: 40px;
+
+      @media (max-width: 1199px) {
+        margin-right: 30px;
+      }
+
+      @media (max-width: 991px) {
+        margin-right: 0;
+      }
+
+      .collapse,
+      .collapsing {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        transform: translateY(100%);
+        background-color: white;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+        transition: all .5s ease;
+
+        @media (max-width: 991px) {
+          position: static;
+          transform: none;
+          box-shadow: none;
+        }
+      }
+
+      .container {
+        align-items: flex-start;
+      }
+  
+      .header-collapse-toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: .03rem;
+        position: relative;
+
+        img {
+          transition: all .3s ease;
+        }
+
+        &[aria-expanded="true"] {
+          font-weight: 700;
+          letter-spacing: 0;
+
+          img {
+            transform: rotate(0);
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -1px;
+          left: 0;
+          width: 300%;
+          height: 1px;
+          background-color: $gray-light;
+          transform: translateX(-50%);
+          display: none;
+
+          @media (max-width: 991px) {
+            display: block;
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 300%;
+          height: 1px;
+          background-color: $gray-light;
+          transform: translateX(-50%);
+          display: none;
+
+          @media (max-width: 991px) {
+            display: block;
+          }
+        }
+
+        @media (max-width: 991px) {
+          justify-content: space-between;
+          padding: 12px 0;
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: 0;
+
+          img {
+            transform: rotate(-90deg);
+          }
+
+          .angle-icon {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .header-links {
+        display: flex;
+        line-height: 2;
+        flex-wrap: wrap;
+
+        &-group {
+          margin-bottom: 10px;
+        }
+      }
+
+      p.header-dropdown-link {
+        margin-bottom: 5px;
+
+        @media (max-width: 1199px) {
+          margin-bottom: 0;
+        }
+      }
+
+      &-link {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    #aboutUsCollapse {
+      .container {
+        padding: 60px 15px;
+
+        @media (max-width: 1199px) {
+          padding: 40px 15px;
+        }
+
+        @media (max-width: 991px) {
+          flex-direction: column;
+          padding: 25px 0;
+        }
+      }
+
+      .header-banner {
+        font-size: 28px;
+        max-width: 400px;
+        
+        @media (min-width: 1200px) and (max-width: 1299px) {
+          font-size: 24px;
+          max-width: 350px;
+        }
+
+        @media (max-width: 1199px) {
+          font-size: 20px;
+          max-width: 280px;
+        }
+
+        @media (max-width: 991px) {
+          font-size: 18px;
+          font-weight: 700;
+          max-width: 350px;
+          margin-bottom: 25px;
+        }
+      }
+
+      .header-links {
+        &-group:not(:last-child) {
+          margin-right: 80px;
+
+          @media (min-width: 1200px) and (max-width: 1299px) {
+            margin-right: 60px;
+          }
+
+          @media (max-width: 1199px) {
+            margin-right: 30px;
+          }
+
+          @media (max-width: 991px) {
+            margin-right: 60px;
+          }
+
+          @media (max-width: 767px) {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    #contributorsCollapse {
+      .container {
+        align-items: stretch;
+
+        @media (max-width: 991px) {
+          flex-direction: column;
+          padding: 0;
+        }
+      }
+
+      .header-links {
+        padding: 60px 0;
+        flex: 0 0 70%;
+
+        @media (max-width: 1199px) {
+          padding: 40px 0;
+        }
+        
+        @media (max-width: 991px) {
+          padding: 25px 0;
+          flex: 0;
+        }
+
+        &-group:not(:last-child) {
+          margin-right: 60px;
+
+          @media (min-width: 1200px) and (max-width: 1299px) {
+            margin-right: 40px;
+          }
+
+          @media (max-width: 1199px) {
+            margin-right: 20px;
+          }
+
+          @media (max-width: 991px) {
+            margin-right: 30px;
+          }
+        }
+      }
+
+      .header-banner {
+        position: relative;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 50px;
+        flex: 0 0 30%;
+
+        @media (max-width: 991px) {
+          flex: 0;
+          z-index: 1;
+          padding: 25px 0;
+        }
+
+        .h3 {
+          margin-bottom: 5px;
+          font-size: 28px;
+
+          @media (min-width: 1200px) and (max-width: 1299px) {
+            font-size: 24px;
+          }
+
+          @media (max-width: 1199px) {
+            font-size: 20px;
+          }
+
+          @media (max-width: 991px) {
+            font-size: 28px;
+          }
+        }
+
+        p {
+          margin-bottom: 15px;
+
+          @media (max-width: 991px) {
+            max-width: 360px;
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 270%;
+          background-image: linear-gradient(45deg, $ubuntu-purple, $ubuntu-orange);
+          z-index: -1;
+
+          @media (max-width: 991px) {
+            width: 200%;
+            transform: translateX(-25%);
+          }
+        }
+      }
+    }
+
+    #communityCollapse {
+      .container {
+        align-items: center;
+
+        @media (max-width: 991px) {
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 0;
+        }
+      }
+
+      .header-banner {
+        display: flex;
+        align-items: center;
+        flex: 0 0 55%;
+
+        @media (max-width: 1199px) {
+          flex: 0 0 50%;
+        }
+
+        @media (max-width: 991px) {
+          flex: 0;
+          padding: 25px 0;
+        }
+
+        img {
+          max-width: 225px;
+          width: 100%;
+          height: 100%;
+        }
+
+        p {
+          padding: 0 20px;
+
+          @media (max-width: 767px) {
+            padding: 0;
+          }
+        }
+
+        p:first-child {
+          font-size: 28px;
+          line-height: 1.4;
+          margin-bottom: 10px;
+
+          @media (min-width: 1200px) and (max-width: 1299px) {
+            font-size: 24px;
+          }
+
+          @media (max-width: 1199px) {
+            font-size: 20px;
+          }
+
+          @media (max-width: 991px) {
+            font-weight: 700;
+            font-size: 18px;
+            margin: 0;
+            max-width: 350px;
+          }
+        }
+      }
+
+      .header-links {
+        flex: 0 0 45%;
+        padding-bottom: 25px;
+
+        @media (max-width: 1199px) {
+          flex: 0 0 50%;
+        }
+
+        @media (max-width: 991px) {
+          flex: 0;
+        }
+
+        &-group:not(:last-child) {
+          margin-right: 60px;
+
+          @media (min-width: 1200px) and (max-width: 1299px) {
+            margin-right: 30px;
+          }
+
+          @media (max-width: 1199px) {
+            margin-right: 15px;
+          }
+
+          @media (max-width: 991px) {
+            margin-right: 50px;
+          }
+
+          @media (max-width: 767px) {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    #getUbuntuTouchCollapse {
+      .container {
+        padding: 25px 0;
+      }
+    }
+  }
+
+  // Hamburger Icon
+  &-hamburger {
+    display: none;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    img {
+      width: 33px;
+    }
+  }
+}

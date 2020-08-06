@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------------------
+// This file contains all styles related to the bootstrap overrides of the site/application.
+// -----------------------------------------------------------------------------------------
+
+// Dropdown
+.dropdown {
+  &-menu {
+    min-width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border: none;
+  }
+
+  &-item {
+    padding: 10px 20px;
+    line-height: 1.1;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $off-white;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $off-white;
+      color: black;
+    }
+  }
+}

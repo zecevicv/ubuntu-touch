@@ -1,0 +1,95 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+body {
+  font-family: 'ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  color: black;
+  max-width: 100%;
+  overflow-x: hidden;
+  letter-spacing: 0;
+  
+  /* Height of the fixed header */
+  padding-top: 100px;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    /* Height of the fixed header */
+    padding-top: 90px;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none!important;
+  box-shadow: none!important;
+}
+
+.angle-icon {
+  width: 13px;
+  margin-left: 10px;
+}
+
+.angle-icon-gradient {
+  width: 30px;
+  margin-left: 10px;
+}

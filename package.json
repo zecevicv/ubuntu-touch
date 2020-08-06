@@ -1,0 +1,24 @@
+{
+  "name": "ubuntutouch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "node-sass scss/main.scss css/style.css -w",
+    "compile:scss": "node-sass scss/main.scss css/style.css --output-style compressed",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "swiper": "^6.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
+  }
+}
