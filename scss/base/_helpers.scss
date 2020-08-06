@@ -2,5 +2,9 @@
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
 .bold {
-  font-weight: 700;
+  font-weight: 700!important;
+}
+
+.light {
+  font-weight: 300!important;
 }

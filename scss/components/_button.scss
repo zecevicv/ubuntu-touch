@@ -8,20 +8,35 @@
   align-items: center;
   font-weight: 700;
   padding: 8px 25px;
+  transition: all .3s ease-in-out;
 }
 
-.btn-outline-secondary {
-  border: 1px solid $ubuntu-purple;
-  color: $ubuntu-purple;
+// Button Primary
+.btn-primary {
+  background-color: $ubuntu-purple-light;
+  border: 1px solid $ubuntu-purple-light;
 
   &:hover,
   &:active {
-    background-color: $ubuntu-purple;
-    color: white;
-    border: 1px solid $ubuntu-purple;
+    background-color: $ubuntu-purple-dark;
+    border: 1px solid $ubuntu-purple-dark;
   }
 }
 
+// Button Secondary Outline
+.btn-outline-secondary {
+  border: 1px solid $ubuntu-purple-light;
+  color: $ubuntu-purple-light;
+
+  &:hover,
+  &:active {
+    background-color: $ubuntu-purple-light;
+    color: white;
+    border: 1px solid $ubuntu-purple-light;
+  }
+}
+
+// Button Rounded
 .btn-rounded {
   border-radius: 100px;
 }
