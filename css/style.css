@@ -913,6 +913,9 @@ a:focus {
         max-width: 1300px; } }
   .breadcrumbs img {
     margin: 0 15px; }
+    @media (max-width: 575px) {
+      .breadcrumbs img {
+        margin: 0 10px; } }
   .breadcrumbs a:hover {
     text-decoration: underline; }
 
@@ -1053,7 +1056,7 @@ a:focus {
     width: 100%; }
     @media (max-width: 767px) {
       .blog-post-hero img {
-        min-height: 300px;
+        min-height: 400px;
         object-fit: cover; } }
   .blog-post-hero .container {
     position: absolute;
