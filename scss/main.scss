@@ -26,9 +26,12 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/breadcrumb',
+  'components/button',
+  'components/code';
 
 // 6. Page-specific styles
 @import
   'pages/blog',
+  'pages/blog-post',
   'pages/home';

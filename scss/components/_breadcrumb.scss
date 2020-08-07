@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the breadcrumb component.
+// -----------------------------------------------------------------------------
+.breadcrumbs {
+  padding: 15px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 1300px) {
+      max-width: $container-large;
+    }
+  }
+
+  img {
+    margin: 0 15px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
