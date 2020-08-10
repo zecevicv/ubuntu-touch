@@ -1,6 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'ubuntu', sans-serif;
   font-weight: 300;
@@ -82,14 +86,4 @@ select:focus,
 button:focus {
   outline: none!important;
   box-shadow: none!important;
-}
-
-.angle-icon {
-  width: 13px;
-  margin-left: 10px;
-}
-
-.angle-icon-gradient {
-  width: 30px;
-  margin-left: 10px;
 }

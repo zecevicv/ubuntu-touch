@@ -28,10 +28,12 @@
 @import
   'components/breadcrumb',
   'components/button',
-  'components/code';
+  'components/code',
+  'components/icon';
 
 // 6. Page-specific styles
 @import
   'pages/blog',
   'pages/blog-post',
-  'pages/home';
+  'pages/home',
+  'pages/page';
