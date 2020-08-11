@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubuntu Touch — Ports</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/icons/favicon.svg" sizes="32x32">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <img src="img/icons/ubuntu-touch-logo.svg" alt="ubuntu-touch-logo">
+      </div>
+
+      <!-- Nav -->
+      <div class="header-nav">
+        <div class="container">
+          <div class="collapse" id="headerNav">
+            <!-- About Us -->
+            <div class="header-dropdown">
+              <a class="header-collapse-toggler" data-toggle="collapse" href="#aboutUsCollapse" role="button" aria-expanded="false"
+                aria-controls="aboutUsCollapse">
+                About Us <img class="angle-icon" src="img/icons/angle-icon.svg" alt="angle-icon">
+              </a>
+              <div class="collapse" id="aboutUsCollapse" data-parent="#headerNav">
+                <div class="container">
+                  <!-- Header Banner -->
+                  <div class="header-banner">
+                    <p>We dare to dream about a future where users, developers and companies alike can define smart-phones
+                      together.</p>
+                  </div>
+                  <!-- Header Links -->
+                  <div class="header-links">
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Daily Announcements
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Telegram New Channel</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Mastodon</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Twitter</a>
+                      </li>
+                    </ul>
+    
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Ethos
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Manifesto
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Privacy concern
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Transparency
+                        </a>
+                      </li>
+                    </ul>
+    
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Ubports Foundation
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Governance and Membership
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Sponsors
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Contributors -->
+            <div class="header-dropdown">
+              <a class="header-collapse-toggler" data-toggle="collapse" href="#contributorsCollapse" role="button" aria-expanded="false"
+                aria-controls="contributorsCollapse">
+                Contributors <img class="angle-icon" src="img/icons/angle-icon.svg" alt="angle-icon">
+              </a>
+              <div class="collapse" id="contributorsCollapse" data-parent="#headerNav">
+                <div class="container">
+                  <!-- Header Links -->
+                  <div class="header-links">
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          For Developers
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Development Hub</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Halium Project
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Forum Section
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Core
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Porting
+                        </a>
+                      </li>
+                    </ul>
+    
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          For Designers
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Design Hub</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Guidliness
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Grid
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Icons
+                        </a>
+                      </li>
+                    </ul>
+  
+                    <div>
+                      <!-- Group -->
+                      <ul class="header-links-group mb-4">
+                        <li>
+                          <p class="header-dropdown-link bold">
+                            <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                            For Testers & Writers
+                          </p>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Tester's Hub</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">
+                            <img src="img/icons/external-link.svg" alt="external-link-icon">
+                            Quality Assurance
+                          </a>
+                        </li>
+                      </ul>
+  
+                      <!-- Group -->
+                      <ul class="header-links-group">
+                        <li>
+                          <p class="header-dropdown-link bold">
+                            <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                            For Marketers
+                          </p>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Marketers Hub</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">
+                            <img src="img/icons/external-link.svg" alt="external-link-icon">
+                            Marketing Incubator
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+    
+                    <div>
+                      <!-- Group -->
+                      <ul class="header-links-group mb-4">
+                        <li>
+                          <p class="header-dropdown-link bold">
+                            <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                            For Communites
+                          </p>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Communities Hub</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Community Values</a>
+                        </li>
+                      </ul>
+      
+                      <!-- Group -->
+                      <ul class="header-links-group">
+                        <li>
+                          <p class="header-dropdown-link bold">
+                            <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                            For All
+                          </p>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Overview</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Life in the community</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Ubuntu Touch Support</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Header Banner -->
+                  <div class="header-banner">
+                    <h3 class="h3">It’s your time to shine</h3>
+                    <p>No matter what your background is or where you live, you can hope on board and join us in the battle
+                      of freedom.</p>
+                    <button class="btn btn-outline-light btn-rounded">Hub Center</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Community -->
+            <div class="header-dropdown">
+              <a class="header-collapse-toggler" data-toggle="collapse" href="#communityCollapse" role="button" aria-expanded="false"
+                aria-controls="communityCollapse">
+                Community <img class="angle-icon" src="img/icons/angle-icon.svg" alt="angle-icon">
+              </a>
+              <div class="collapse" id="communityCollapse" data-parent="#headerNav">
+                <div class="container">
+                  <!-- Header Banner -->
+                  <div class="header-banner">
+                    <img class="d-none d-md-block" src="img/header/community-banner.jpg" alt="banner-img">
+                    <div>
+                      <p>Our telegram group is a meeting point for people who shape the direction of Ubuntu Touch.</p>
+                      <p class="d-none d-md-block">We recommend you start <a href="#" class="link">there</a>.</p>
+                    </div>
+                  </div>
+                  <!-- Header Links -->
+                  <div class="header-links">
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Telegram Main Groups
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Ubports Overflow</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Ubports UX & Graphics</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Ubports [English]</a>
+                      </li>
+                    </ul>
+    
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Discussions
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Ubports Form
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Redit
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          #Matrix On Freenode
+                        </a>
+                      </li>
+                    </ul>
+    
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Blog & Live
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Audiocast
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Previous QA
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Blog
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Get Ubuntu Touch -->
+            <div class="dropdown d-none d-lg-block">
+              <button class="btn btn-outline-primary btn-rounded" type="button" id="getUbuntuTouchDropdown" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Get Ubuntu Touch <img class="angle-icon" src="img/icons/angle-icon.svg" alt="angle-icon">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="getUbuntuTouchDropdown">
+                <a class="dropdown-item" href="#">Features</a>
+                <a class="dropdown-item" href="#">Open Store</a>
+                <a class="dropdown-item" href="#">Devices</a>
+              </div>
+            </div>
+
+            <!-- Get Ubuntu Touch -->
+            <div class="header-dropdown d-lg-none">
+              <a class="header-collapse-toggler" data-toggle="collapse" href="#getUbuntuTouchCollapse" role="button" aria-expanded="false"
+                aria-controls="getUbuntuTouchCollapse">
+                Get Ubuntu Touch <img class="angle-icon-gradient" src="img/icons/angle-icon-gradient.svg" alt="angle-icon">
+              </a>
+              <div class="collapse" id="getUbuntuTouchCollapse" data-parent="#headerNav">
+                <div class="container">
+                  <!-- Header Links -->
+                  <div class="header-links">
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Get Ubuntu Touch
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Features</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Open Store</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Devices</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="header-hamburger">
+        <a data-toggle="collapse" href="#headerNav" role="button" aria-expanded="false" aria-controls="headerNav">
+          <img src="img/icons/hamburger.svg" alt="hamburger-icon">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ports -->
+  <div class="ports">
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Mobile Toggler -->
+        <a class="sidebar-toggler h3 d-lg-none" data-toggle="collapse" href="#sidebarCollapse" role="button" aria-expanded="false" aria-controls="sidebarCollapse">
+          Choose Device
+          <span class="value">40</span>
+          <img src="img/icons/angle-icon-gradient.svg" alt="angle-icon" class="angle-icon-gradient">
+        </a>
+        <!-- Collapse -->
+        <div class="collapse" id="sidebarCollapse">
+          <!-- Tabs -->
+          <ul class="nav nav-tabs d-none d-lg-flex" id="tab" role="tablist">
+            <!-- All -->
+            <li class="nav-item">
+              <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">
+                All
+              </a>
+            </li>
+            <!-- Tablets -->
+            <li class="nav-item">
+              <a class="nav-link" id="tablets-tab" data-toggle="tab" href="#tablets" role="tab" aria-controls="tablets" aria-selected="false">
+                Tablets
+              </a>
+            </li>
+            <!-- Phones -->
+            <li class="nav-item">
+              <a class="nav-link" id="phones-tab" data-toggle="tab" href="#phones" role="tab" aria-controls="phones" aria-selected="false">
+                Phones
+              </a>
+            </li>
+          </ul>
+          <!-- Search -->
+          <input class="input d-none d-lg-block" type="text" placeholder="Search device">
+          <!-- Tab Content -->
+          <div class="tab-content" id="tabContent">
+            <!-- All -->
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+              <h3 class="h3 d-none d-lg-block">Devices <span class="value">40</span></h3>
+              <ul>
+                <!-- Item -->
+                <li class="active">
+                  <a href="#">Oneplus One</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Bq Aquaris M10 FHD (frieza)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Fairphone 2</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Nexus 5</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Nexus 4</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Bq Aquaris M10 HD</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Bq Aquaris E4.5 (krillin)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Meizu MX4</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Bq Aquaris E5</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Meizu Pro 5</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Redmi 5 Plus</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Sony Xperia X Performance (F8131 & F8132)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Oneplus 3</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Nexus 7 2013 WiFi (flo)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Sony Xperia X (F5121 & F5122) (suzu)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Pinephone</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Nexus 7 2013 LTE (deb)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">VollaPhone</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Bq Aquaris U Plus</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Redmi 4(X)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Redmi 4(A)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Sony Xperia Z1 (C610X)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Pinebook</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Mi A3</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Nexus 6P</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Pinetab</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Moto G (2014)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Desktop PC (x86)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Raspberry Pi</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Samsung S3 Neo</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Zuk z2 Plus</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Mi Note 2</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">LG V20 T-Mobile</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi 4</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Redmi Note 7</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Yu Black</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Asus Zenfone 2 ZE551ML</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">LG G6</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Tablets -->
+            <div class="tab-pane fade" id="tablets" role="tabpanel" aria-labelledby="tablets-tab">
+              <h3 class="h3 d-none d-lg-block">Devices <span class="value">20</span></h3>
+              <ul>
+                <!-- Item -->
+                <li class="active">
+                  <a href="#">Nexus 7 2013 LTE (deb)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">VollaPhone</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Bq Aquaris U Plus</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Redmi 4(X)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Redmi 4(A)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Sony Xperia Z1 (C610X)</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Pinebook</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Mi A3</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Phones -->
+            <div class="tab-pane fade" id="phones" role="tabpanel" aria-labelledby="phones-tab">
+              <h3 class="h3 d-none d-lg-block">Devices <span class="value">20</span></h3>
+              <ul>
+                <!-- Item -->
+                <li class="active">
+                  <a href="#">Zuk z2 Plus</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi Mi Note 2</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">LG V20 T-Mobile</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Xiaomi 4</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Redmi Note 7</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Yu Black</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">Asus Zenfone 2 ZE551ML</a>
+                </li>
+                <!-- Item -->
+                <li>
+                  <a href="#">LG G6</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Built With -->
+          <div class="built-with d-none d-lg-block">
+            <h3 class="h3">Built with Java</h3>
+            <p>If your device is not listed here, you might vote for it on UBport Form.</p>
+            <img src="img/ports/java.svg" alt="java-img">
+          </div>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="content">
+        <!-- Heading -->
+        <div class="heading">
+          <!-- Title -->
+          <div class="title">
+            <div>
+              <h1 class="h3 pr-4">OnePlus One</h1>
+              <button class="btn btn-tertiary btn-small btn-rounded">Buy</button>
+            </div>
+            <p>
+              <a href="#">Halium 7.1</a>
+            </p>
+          </div>
+          <!-- Icon -->
+          <div class="icon">
+            <img src="img/ports/phone.svg" alt="phone-img">
+          </div>
+        </div>
+        <!-- Progress -->
+        <p class="bold mb-1">Overall progress</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <!-- Steps -->
+        <div class="steps">
+          <p class="bold mb-1">Preparatory steps</p>
+          <p>You can install Ubuntu Touch on the versions F5121 and F5122 of the Sony Xperia X. Before, you have to take a number of preparatory steps:</p>
+          <p>Ensure you have upgraded the stock firmware at least to Android 8, else you can't flash the OEM binaries for AOSP. It is best to ensure that you have all the latest firmware installed.</p>
+          <p>Enable developer options for your device.</p>
+        </div>
+        <!-- Features -->
+        <div class="features">
+          <!-- Group -->
+          <div>
+            <!-- Actors -->
+            <ul>
+              <li>
+                <p class="bold">Actors:</p>
+              </li>
+              <li>
+                <a href="#">+ Manual brightness</a>
+              </li>
+              <li>
+                <a href="#">+ Notification LED</a>
+              </li>
+              <li>
+                <a href="#">- Torchlight</a>
+              </li>
+              <li>
+                <a href="#">- Vibration</a>
+              </li>
+            </ul>
+            <!-- Camera -->
+            <ul>
+              <li>
+                <p class="bold">Camera:</p>
+              </li>
+              <li>
+                <a href="#">+ Flashlight</a>
+              </li>
+              <li>
+                <a href="#">- Photo</a>
+              </li>
+              <li>
+                <a href="#">- Video</a>
+              </li>
+            </ul>
+            <!-- Cellular -->
+            <ul>
+              <li>
+                <p class="bold">Cellular:</p>
+              </li>
+              <li>
+                <a href="#">+ Carrier info, signal strength</a>
+              </li>
+              <li>
+                <a href="#">+ Data connection</a>
+              </li>
+              <li>
+                <a href="#">+ Incoming, outgoing calls</a>
+              </li>
+              <li>
+                <a href="#">- MMS in, out</a>
+              </li>
+              <li>
+                <a href="#">- PIN unlock</a>
+              </li>
+            </ul>
+            <!-- Cellular -->
+            <ul>
+              <li>
+                <p class="bold">Cellular:</p>
+              </li>
+              <li>
+                <a href="#">+ Change audio routings</a>
+              </li>
+              <li>
+                <a href="#">+ Voice in calls</a>
+              </li>
+              <li>
+                <a href="#">- SMS in, out</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Group -->
+          <div>
+            <!-- Network -->
+            <ul>
+              <li>
+                <p class="bold">Network:</p>
+              </li>
+              <li>
+                <a href="#">+ Bluetooth</a>
+              </li>
+              <li>
+                <a href="#">+ Flight mode</a>
+              </li>
+              <li>
+                <a href="#">- Hotspot</a>
+              </li>
+            </ul>
+            <!-- Endurance -->
+            <ul>
+              <li>
+                <p class="bold">Endurance:</p>
+              </li>
+              <li>
+                <a href="#">+ Battery lifetime > 24h from 100%</a>
+              </li>
+              <li>
+                <a href="#">+ No reboot needed for 1 week</a>
+              </li>
+            </ul>
+            <!-- GPU -->
+            <ul>
+              <li>
+                <p class="bold">GPU:</p>
+              </li>
+              <li>
+                <a href="#">+ Boot into UI</a>
+              </li>
+              <li>
+                <a href="#">+ Video acceleration</a>
+              </li>
+            </ul>
+            <!-- Misc -->
+            <ul>
+              <li>
+                <p class="bold">Misc:</p>
+              </li>
+              <li>
+                <a href="#">+ Anbox patches applied to kernel</a>
+              </li>
+              <li>
+                <a href="#">+ Battery percentage</a>
+              </li>
+              <li>
+                <a href="#">+ Offline charging</a>
+              </li>
+              <li>
+                <a href="#">+ Online charging</a>
+              </li>
+              <li>
+                <a href="#">+ Wirelss charging</a>
+              </li>
+              <li>
+                <a href="#">+ Recovery image</a>
+              </li>
+              <li>
+                <a href="#">+ Reset to factory defaults</a>
+              </li>
+              <li>
+                <a href="#">+ Shutdown / Reboot</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Group -->
+          <div>
+            <!-- Network -->
+            <ul>
+              <li>
+                <p class="bold">Network:</p>
+              </li>
+              <li>
+                <a href="#">+ NFC</a>
+              </li>
+              <li>
+                <a href="#">+ WiFi</a>
+              </li>
+              <li>
+                <a href="#">+ Automatic brightness</a>
+              </li>
+            </ul>
+            <!-- Sensors -->
+            <ul>
+              <li>
+                <p class="bold">Sensors:</p>
+              </li>
+              <li>
+                <a href="#">+ Fingerprint reader</a>
+              </li>
+              <li>
+                <a href="#">+ GPS</a>
+              </li>
+              <li>
+                <a href="#">+ Proximity</a>
+              </li>
+              <li>
+                <a href="#">+ Rotation</a>
+              </li>
+              <li>
+                <a href="#">+ Touchscreen</a>
+              </li>
+            </ul>
+            <!-- Sound -->
+            <ul>
+              <li>
+                <p class="bold">Sound:</p>
+              </li>
+              <li>
+                <a href="#">+ Earphones</a>
+              </li>
+              <li>
+                <a href="#">+ Loudspeaker</a>
+              </li>
+              <li>
+                <a href="#">+ Microphone</a>
+              </li>
+              <li>
+                <a href="#">+ Volume control</a>
+              </li>
+            </ul>
+            <!-- USB -->
+            <ul>
+              <li>
+                <p class="bold">USB:</p>
+              </li>
+              <li>
+                <a href="#">+ MTP access</a>
+              </li>
+              <li>
+                <a href="#">+ RNDIS access</a>
+              </li>
+              <li>
+                <a href="#">+ External monitor</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Specifications -->
+        <div class="specifications">
+          <p class="bold">Device specifications</p>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <tr>
+                <td>CPU</td>
+                <td>Octa-core 2.02 GHz ARM Cortex A53</td>
+              </tr>
+              <tr>
+                <td>Chipset</td>
+                <td>Qualcomm Snapdragon 625, MSM8953</td>
+              </tr>
+              <tr>
+                <td>GPU</td>
+                <td>Adreno 506</td>
+              </tr>
+              <tr>
+                <td>ROM</td>
+                <td>32/64GB</td>
+              </tr>
+              <tr>
+                <td>RAM</td>
+                <td>3/4GB</td>
+              </tr>
+              <tr>
+                <td>Android</td>
+                <td>7.1.2</td>
+              </tr>
+              <tr>
+                <td>Battery</td>
+                <td>4000 mAh</td>
+              </tr>
+              <tr>
+                <td>Display</td>
+                <td>1080x2160 pixels, 5.99</td>
+              </tr>
+              <tr>
+                <td>Rear Camera</td>
+                <td>12MP, PDAF</td>
+              </tr>
+              <tr>
+                <td>Front Camera</td>
+                <td>5 MP</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- Bugs -->
+        <div class="bugs">
+          <p class="bold mb-1">Known bugs</p>
+          <p>Ensure you have upgraded the stock firmware at least to Android 8, else you can't flash the OEM binaries for AOSP. It is best to ensure that you have all the latest firmware installed.</p>
+        </div>
+        <!-- Solutions -->
+        <div class="solutions">
+          <p class="bold mb-1">Potential solutions</p>
+          <code class="code">Sodo -killall</code>
+        </div>
+        <!-- Installer -->
+        <div class="ports-banner installer">
+          <h2 class="h3">Installer</h2>
+          <div class="btns">
+            <!-- Linux -->
+            <button class="btn btn-download">
+              <img class="system-icon" src="img/icons/linux.svg" alt="linux-img">
+              <div>
+                <p class="bold">Linux</p>
+                <p>tgz (64)</p>
+              </div>
+              <img class="download-icon" src="img/icons/download.svg" alt="download-icon">
+            </button>
+            <!-- Mac -->
+            <button class="btn btn-download">
+              <img class="system-icon" src="img/icons/mac.svg" alt="mac-img">
+              <div>
+                <p class="bold">Mac</p>
+                <p>dmg</p>
+              </div>
+              <img class="download-icon" src="img/icons/download.svg" alt="download-icon">
+            </button>
+            <!-- Windows -->
+            <button class="btn btn-download">
+              <img class="system-icon" src="img/icons/win.svg" alt="win-img">
+              <div>
+                <p class="bold">Windows</p>
+              </div>
+              <img class="download-icon" src="img/icons/download.svg" alt="download-icon">
+            </button>
+          </div>
+          <p>Simply plug in your device and follow the on-screen instructions. Then sit back and let your computer do all the work.</p>
+          <p class="bold">Release 12.33.3.4</p>
+        </div>
+        <!-- No Installer -->
+        <div class="ports-banner no-installer">
+          <p class="bold">This device hasn’t been added to Intaller yet, Check repo instead. </p>
+        </div>
+        <!-- Contributes & Discussions -->
+        <div class="contributes-discussions">
+          <!-- Contributes -->
+          <div class="contributes">
+            <h2 class="h3 light">Contributes</h2>
+            <ul>
+              <!-- Person -->
+              <li>
+                <a href="#">
+                  <img src="img/ports/person.jpg" alt="person-img">
+                  <p>Neothethird</p>
+                </a>
+              </li>
+              <!-- Person -->
+              <li>
+                <a href="#">
+                  <img src="img/ports/person.jpg" alt="person-img">
+                  <p>Neothethird</p>
+                </a>
+              </li>
+              <!-- Person -->
+              <li>
+                <a href="#">
+                  <img src="img/ports/person.jpg" alt="person-img">
+                  <p>Neothethird</p>
+                </a>
+              </li>
+              <!-- Person -->
+              <li>
+                <a href="#">
+                  <img src="img/ports/person.jpg" alt="person-img">
+                  <p>Neothethird</p>
+                </a>
+              </li>
+              <!-- Person -->
+              <li>
+                <a href="#">
+                  <img src="img/ports/person.jpg" alt="person-img">
+                  <p>Neothethird</p>
+                </a>
+              </li>
+              <!-- Person -->
+              <li>
+                <a href="#">
+                  <img src="img/ports/person.jpg" alt="person-img">
+                  <p>Neothethird</p>
+                </a>
+              </li>
+              <!-- Person -->
+              <li>
+                <a href="#">
+                  <img src="img/ports/person.jpg" alt="person-img">
+                  <p>Neothethird</p>
+                </a>
+              </li>
+              <!-- Person -->
+              <li>
+                <a href="#">
+                  <img src="img/ports/person.jpg" alt="person-img">
+                  <p>Neothethird</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Discussions -->
+          <div class="discussions">
+            <h2 class="h3 light">Discussions</h2>
+            <!-- Group -->
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="img/icons/telegram.svg" alt="telegram-icon" class="social-media-icon">
+                  Porting
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/telegram.svg" alt="telegram-icon" class="social-media-icon">
+                  Lomiri Dev 
+                </a>
+              </li>
+            </ul>
+            <!-- Group -->
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="img/icons/yumi.svg" alt="yumi-icon" class="social-media-icon">
+                  Forum OS Selection
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/yumi.svg" alt="yumi-icon" class="social-media-icon">
+                  Forum Porting
+                </a>
+              </li>
+            </ul>
+            <!-- Group -->
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="img/icons/git.png" alt="git-icon" class="git-icon">
+                  Forum OS Selection
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/git.png" alt="git-icon" class="git-icon">
+                  Forum Porting
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Built With -->
+        <div class="built-with d-lg-none">
+          <h3 class="h3">Built with Java</h3>
+          <p>If your device is not listed here, you might vote for it on UBport Form.</p>
+          <img src="img/ports/java.svg" alt="java-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <p class="bold">Powered By</p>
+          <img src="img/icons/ubports-logo.svg" alt="ubports-logo">
+        </div>
+        <!-- Text -->
+        <p class="footer-text">UBport is a global non-profit dedicated to putting you in control of your the future of the mobile for the public good.</p>
+        <!-- Social -->
+        <div class="footer-social">
+          <p class="bold">Follow Us</p>
+          <ul>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/soundcloud.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/mastodon.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/pixelfred.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/linkedin.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/facebook.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/twitter.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/youtube.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/rss.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© Copyright 2020 Ubport Technologies Inc.<span class="d-none d-xl-inline">•</span></p>
+        <p>Ubuntu and Canonical are registered trademarks of Canonical Ltd.<span class="d-none d-xl-inline">•</span></p>
+        <p class="d-none d-lg-flex">
+          <a href="#">License CC-BY-SA-4.0<span>•</span></a>
+          <a href="#">Terms & conditions<span>•</span></a>
+          <a href="#">Privacy policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (vendor) -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

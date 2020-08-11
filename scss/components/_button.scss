@@ -58,6 +58,65 @@
   }
 }
 
+// Button Tertiary
+.btn-tertiary {
+  background-image: linear-gradient(90deg, #8C3683, #C0474C);
+  border: 1px solid white;
+  color: white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+  }
+}
+
+// Button Download
+.btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 0;
+
+  .system-icon {
+    height: 57px;
+    width: 57px;
+    object-fit: contain;
+  }
+
+  .download-icon {
+    width: 25px;
+  }
+
+  div {
+    margin: 0 25px;
+
+    @media (max-width: 1199px) {
+      margin: 0 auto 0 25px;
+    }
+  }
+
+  p {
+    margin-bottom: 0!important;
+  }
+
+  &:hover {
+    background-color: white;
+  }
+
+
+}
+
+// Button Small
+.btn-small {
+  padding: 5px 16px!important;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 // Button Rounded
 .btn-rounded {
   border-radius: 100px;
