@@ -1035,6 +1035,84 @@ a:focus {
 input:focus {
   border: 1px solid black; }
 
+@media (min-width: 576px) {
+  .popup .modal-dialog {
+    max-width: 510px; } }
+
+@media (min-width: 768px) {
+  .popup .modal-dialog {
+    max-width: 690px; } }
+
+@media (min-width: 992px) {
+  .popup .modal-dialog {
+    max-width: 930px; } }
+
+@media (min-width: 1200px) {
+  .popup .modal-dialog {
+    max-width: 1110px; } }
+
+@media (min-width: 1300px) {
+  .popup .modal-dialog {
+    max-width: 1220px; } }
+
+.popup .modal-content {
+  border-radius: 15px;
+  border: none; }
+
+.popup .modal-header {
+  border: none;
+  padding: 35px 25px; }
+  .popup .modal-header button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    background-color: transparent; }
+    .popup .modal-header button img {
+      width: 30px;
+      margin-right: 10px; }
+
+.popup .modal-body {
+  padding: 25px 0 125px 80px;
+  max-width: 70%;
+  position: relative;
+  z-index: 2; }
+  .popup .modal-body .h1 {
+    margin-bottom: 30px; }
+    @media (max-width: 767px) {
+      .popup .modal-body .h1 {
+        font-size: 40px; } }
+  .popup .modal-body p {
+    max-width: 680px; }
+    @media (max-width: 1199px) {
+      .popup .modal-body p {
+        max-width: 500px; } }
+    @media (max-width: 991px) {
+      .popup .modal-body p {
+        max-width: 100%; } }
+  @media (max-width: 1199px) {
+    .popup .modal-body {
+      padding: 15px 0 80px 80px; } }
+  @media (max-width: 991px) {
+    .popup .modal-body {
+      padding: 15px 25px 100px 25px;
+      max-width: 100%; } }
+  @media (max-width: 768px) {
+    .popup .modal-body {
+      padding: 0 25px 60px 25px; } }
+
+.popup .bg-img {
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+  height: 100%;
+  z-index: 0; }
+  .popup .bg-img img {
+    height: 100%; }
+  @media (max-width: 991px) {
+    .popup .bg-img {
+      display: none; } }
+
 .progress {
   border-radius: 100px;
   background-color: #efedec;

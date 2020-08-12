@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ubuntu Touch — Header</title>
+  <title>Ubuntu Touch — Popup</title>
 
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
-  
+
   <!-- Favicon -->
   <link rel="icon" href="img/icons/favicon.svg" sizes="32x32">
 </head>
@@ -435,6 +435,120 @@
       </div>
     </div>
   </header>
+
+
+  <div class="container py-5">
+    <!-- Popup Toggler -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popup">
+      Launch demo modal
+    </button>
+
+    <!-- Popup -->
+    <div class="popup">
+      <div class="modal fade" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" data-dismiss="modal" aria-label="close">
+                <img src="img/icons/close.svg" alt="close-img">
+                Dismiss
+              </button>
+            </div>
+            <div class="modal-body">
+              <h2 class="h1">You can shape the difference in a trillion dollar industry.</h2>
+              <p>The mobile market is dominated by a few big companies who, in return for our data--how, where and what we communicate--let us use their services and make use dependent.</p>
+            </div>
+            <div class="bg-img">
+              <img src="img/popup/popup.jpg" alt="popup-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <p class="bold">Powered By</p>
+          <img src="img/icons/ubports-logo.svg" alt="ubports-logo">
+        </div>
+        <!-- Text -->
+        <p class="footer-text">UBport is a global non-profit dedicated to putting you in control of your the future of the mobile for the public good.</p>
+        <!-- Social -->
+        <div class="footer-social">
+          <p class="bold">Follow Us</p>
+          <ul>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/soundcloud.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/mastodon.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/pixelfred.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/linkedin.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/facebook.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/twitter.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/youtube.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/rss.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© Copyright 2020 Ubport Technologies Inc.<span class="d-none d-xl-inline">•</span></p>
+        <p>Ubuntu and Canonical are registered trademarks of Canonical Ltd.<span class="d-none d-xl-inline">•</span></p>
+        <p class="d-none d-lg-flex">
+          <a href="#">License CC-BY-SA-4.0<span>•</span></a>
+          <a href="#">Terms & conditions<span>•</span></a>
+          <a href="#">Privacy policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Scripts (vendor) -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
