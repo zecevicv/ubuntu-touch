@@ -14,7 +14,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   letter-spacing: 0;
-  
+
   /* Height of the fixed header */
   padding-top: 100px;
 }
@@ -84,6 +84,6 @@ input:focus,
 textarea:focus,
 select:focus,
 button:focus {
-  outline: none!important;
-  box-shadow: none!important;
+  outline: none !important;
+  box-shadow: none !important;
 }

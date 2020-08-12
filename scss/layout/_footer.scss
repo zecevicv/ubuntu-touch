@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 .footer {
   margin-top: auto;
+
   .container {
     display: flex;
 
@@ -39,6 +40,10 @@
 
       p {
         margin-bottom: 20px;
+      }
+
+      a {
+        display: block;
       }
 
       img {

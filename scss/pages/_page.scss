@@ -103,7 +103,7 @@
       height: 100%;
       background-image: linear-gradient(90deg, $ubuntu-purple-light, $ubuntu-orange);
       z-index: -1;
-      
+
       @media (max-width: 991.98px) {
         width: 150%;
         transform: translateX(-15%);
@@ -162,7 +162,7 @@
 
     .collapse {
       @media (min-width: 992px) {
-        display: block!important;
+        display: block !important;
       }
     }
 
@@ -191,8 +191,8 @@
       }
 
       a {
-        padding: 0!important;
-        padding-left: 12px!important;
+        padding: 0 !important;
+        padding-left: 12px !important;
         line-height: 2.5;
         background-color: white;
         color: black;
@@ -253,7 +253,7 @@
   @media (max-width: 1199.98px) {
     margin-top: 100px;
   }
-  
+
   // Resources
   .page-resources {
     display: flex;
@@ -265,7 +265,7 @@
       flex-direction: column;
     }
 
-    & > div:not(:last-child) {
+    &>div:not(:last-child) {
       margin-right: 30px;
       margin-bottom: 50px;
 
@@ -278,7 +278,7 @@
     .arrow {
       margin-right: 15px;
     }
-  } 
+  }
 
   // Discussions
   .page-discussions {
@@ -286,7 +286,7 @@
       display: flex;
       padding-left: 30px;
       flex-wrap: wrap;
-      
+
       li {
         min-width: 185px;
         margin-bottom: 30px;
@@ -324,7 +324,7 @@
   h2 {
     text-align: center;
     margin-bottom: 50px;
-    
+
     @media (max-width: 991.98px) {
       margin-bottom: 40px;
     }
@@ -352,7 +352,7 @@
       margin-bottom: 15px;
     }
 
-    & > a {
+    &>a {
       display: flex;
       justify-content: space-between;
       align-items: center;
