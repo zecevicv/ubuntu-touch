@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubuntu Touch — Ports Choose Device</title>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/icons/favicon.svg" sizes="32x32">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="#">
+          <img src="img/icons/ubuntu-touch-logo.svg" alt="ubuntu-touch-logo">
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <div class="header-nav">
+        <div class="container">
+          <div class="collapse" id="headerNav">
+            <!-- About Us -->
+            <div class="header-dropdown">
+              <a class="header-collapse-toggler" data-toggle="collapse" href="#aboutUsCollapse" role="button"
+                aria-expanded="false" aria-controls="aboutUsCollapse">
+                About Us <img class="angle-icon" src="img/icons/angle-icon.svg" alt="angle-icon">
+              </a>
+              <div class="collapse" id="aboutUsCollapse" data-parent="#headerNav">
+                <div class="container">
+                  <!-- Header Banner -->
+                  <div class="header-banner">
+                    <p>We dare to dream about a future where users, developers and companies alike can define
+                      smart-phones
+                      together.</p>
+                  </div>
+                  <!-- Header Links -->
+                  <div class="header-links">
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Ubports Foundation
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Governance and Membership
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Sponsors
+                        </a>
+                      </li>
+                    </ul>
+
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Ethos
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Manifesto
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Privacy concern
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Transparency
+                        </a>
+                      </li>
+                    </ul>
+
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Daily Announcements
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Telegram New Channel</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Mastodon</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Twitter</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contributors -->
+            <div class="header-dropdown">
+              <a class="header-collapse-toggler" data-toggle="collapse" href="#contributorsCollapse" role="button"
+                aria-expanded="false" aria-controls="contributorsCollapse">
+                Contributors <img class="angle-icon" src="img/icons/angle-icon.svg" alt="angle-icon">
+              </a>
+              <div class="collapse" id="contributorsCollapse" data-parent="#headerNav">
+                <div class="container">
+                  <!-- Header Links -->
+                  <div class="header-links">
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          For Developers
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Development Hub</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Halium Project
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Forum Section
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Core
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Porting
+                        </a>
+                      </li>
+                    </ul>
+
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          For Designers
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Design Hub</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Guidliness
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Grid
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          <img src="img/icons/external-link.svg" alt="external-link-icon">
+                          Icons
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div>
+                      <!-- Group -->
+                      <ul class="header-links-group mb-4">
+                        <li>
+                          <p class="header-dropdown-link bold">
+                            <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                            For Testers & Writers
+                          </p>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Tester's Hub</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">
+                            <img src="img/icons/external-link.svg" alt="external-link-icon">
+                            Quality Assurance
+                          </a>
+                        </li>
+                      </ul>
+
+                      <!-- Group -->
+                      <ul class="header-links-group">
+                        <li>
+                          <p class="header-dropdown-link bold">
+                            <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                            For Marketers
+                          </p>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Marketers Hub</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">
+                            <img src="img/icons/external-link.svg" alt="external-link-icon">
+                            Marketing Incubator
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <!-- Group -->
+                      <ul class="header-links-group mb-4">
+                        <li>
+                          <p class="header-dropdown-link bold">
+                            <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                            For Communites
+                          </p>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Communities Hub</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Community Values</a>
+                        </li>
+                      </ul>
+
+                      <!-- Group -->
+                      <ul class="header-links-group">
+                        <li>
+                          <p class="header-dropdown-link bold">
+                            <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                            For All
+                          </p>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Overview</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Life in the community</a>
+                        </li>
+                        <li>
+                          <a class="header-dropdown-link" href="#">Ubuntu Touch Support</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Header Banner -->
+                  <div class="header-banner">
+                    <h3 class="h3">It’s your time to shine</h3>
+                    <p>No matter what your background is or where you live, you can hope on board and join us in the
+                      battle
+                      of freedom.</p>
+                    <button class="btn btn-outline-light btn-rounded">Hub Center</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Community -->
+            <div class="header-dropdown">
+              <a class="header-collapse-toggler" data-toggle="collapse" href="#communityCollapse" role="button"
+                aria-expanded="false" aria-controls="communityCollapse">
+                Community <img class="angle-icon" src="img/icons/angle-icon.svg" alt="angle-icon">
+              </a>
+              <div class="collapse" id="communityCollapse" data-parent="#headerNav">
+                <div class="container">
+                  <!-- Header Banner -->
+                  <div class="header-banner">
+                    <img class="d-none d-md-block" src="img/header/community-banner.jpg" alt="banner-img">
+                    <div>
+                      <p>Our telegram group is a meeting point for people who shape the direction of Ubuntu Touch.</p>
+                      <p class="d-none d-md-block">We recommend you start <a href="#" class="link">there</a>.</p>
+                    </div>
+                  </div>
+                  <!-- Header Links -->
+                  <div class="header-links">
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Telegram Main Groups
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Ubports Overflow</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Ubports UX & Graphics</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Ubports [English]</a>
+                      </li>
+                    </ul>
+
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Discussions
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Ubports Form
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Redit
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          #Matrix On Freenode
+                        </a>
+                      </li>
+                    </ul>
+
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Blog & Live
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Audiocast
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Previous QA
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">
+                          Blog
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Get Ubuntu Touch -->
+            <div class="dropdown d-none d-lg-block">
+              <button class="btn btn-outline-primary btn-rounded" type="button" id="getUbuntuTouchDropdown"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Get Ubuntu Touch <img class="angle-icon" src="img/icons/angle-icon.svg" alt="angle-icon">
+              </button>
+              <div class="dropdown-menu" aria-labelledby="getUbuntuTouchDropdown">
+                <a class="dropdown-item" href="#">Features</a>
+                <a class="dropdown-item" href="#">Open Store</a>
+                <a class="dropdown-item" href="#">Devices</a>
+              </div>
+            </div>
+
+            <!-- Get Ubuntu Touch -->
+            <div class="header-dropdown d-lg-none">
+              <a class="header-collapse-toggler" data-toggle="collapse" href="#getUbuntuTouchCollapse" role="button"
+                aria-expanded="false" aria-controls="getUbuntuTouchCollapse">
+                Get Ubuntu Touch <img class="angle-icon-gradient" src="img/icons/angle-icon-gradient.svg"
+                  alt="angle-icon">
+              </a>
+              <div class="collapse" id="getUbuntuTouchCollapse" data-parent="#headerNav">
+                <div class="container">
+                  <!-- Header Links -->
+                  <div class="header-links">
+                    <!-- Group -->
+                    <ul class="header-links-group">
+                      <li>
+                        <p class="header-dropdown-link bold">
+                          <img src="img/icons/bullet-gradient.svg" alt="bullet-icon">
+                          Get Ubuntu Touch
+                        </p>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Features</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Open Store</a>
+                      </li>
+                      <li>
+                        <a class="header-dropdown-link" href="#">Devices</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hamburger -->
+      <div class="header-hamburger">
+        <a data-toggle="collapse" href="#headerNav" role="button" aria-expanded="false" aria-controls="headerNav">
+          <img src="img/icons/hamburger.svg" alt="hamburger-icon">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ports -->
+  <div class="ports">
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Mobile Toggler -->
+        <a class="sidebar-toggler h3 d-lg-none" data-toggle="collapse" href="#sidebarCollapse" role="button"
+          aria-expanded="false" aria-controls="sidebarCollapse">
+          Choose Device
+          <span class="value">0</span>
+          <img src="img/icons/angle-icon-gradient.svg" alt="angle-icon" class="angle-icon-gradient">
+        </a>
+        <!-- Collapse -->
+        <div class="collapse" id="sidebarCollapse">
+          <!-- Tabs -->
+          <ul class="nav nav-tabs d-none d-lg-flex" id="tab" role="tablist">
+            <!-- All -->
+            <li class="nav-item">
+              <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all"
+                aria-selected="true">
+                All
+              </a>
+            </li>
+            <!-- Tablets -->
+            <li class="nav-item">
+              <a class="nav-link" id="tablets-tab" data-toggle="tab" href="#tablets" role="tab" aria-controls="tablets"
+                aria-selected="false">
+                Tablets
+              </a>
+            </li>
+            <!-- Phones -->
+            <li class="nav-item">
+              <a class="nav-link" id="phones-tab" data-toggle="tab" href="#phones" role="tab" aria-controls="phones"
+                aria-selected="false">
+                Phones
+              </a>
+            </li>
+          </ul>
+          <!-- Search -->
+          <input class="input d-none d-lg-block" type="text" placeholder="Search device">
+          <!-- Tab Content -->
+          <div class="tab-content" id="tabContent">
+            <!-- All -->
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+              <h3 class="h3 d-none d-lg-flex">Devices <span class="value">0</span></h3>
+              <ul>
+                <!-- Item -->
+                <li>
+                  Empty.
+                </li>
+              </ul>
+            </div>
+            <!-- Tablets -->
+            <div class="tab-pane fade" id="tablets" role="tabpanel" aria-labelledby="tablets-tab">
+              <h3 class="h3 d-none d-lg-flex">Devices <span class="value">0</span></h3>
+              <ul>
+                <!-- Item -->
+                <li>
+                  Empty.
+                </li>
+              </ul>
+            </div>
+            <!-- Phones -->
+            <div class="tab-pane fade" id="phones" role="tabpanel" aria-labelledby="phones-tab">
+              <h3 class="h3 d-none d-lg-flex">Devices <span class="value">0</span></h3>
+              <ul>
+                <!-- Item -->
+                <li>
+                  Empty.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Built With -->
+          <div class="built-with d-none d-lg-block">
+            <h3 class="h3">Built with Java</h3>
+            <p>If your device is not listed here, you might vote for it on UBport Form.</p>
+            <img src="img/ports/java.svg" alt="java-img">
+          </div>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="content">
+        <!-- Choose Device -->
+        <div class="choose-device">
+          <img src="img/ports/choose-device.jpg" alt="choose-device-img">
+          <h2 class="h3">Choose device</h2>
+          <p>See map progress</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <p class="bold">Powered By</p>
+          <a href="#">
+            <img src="img/icons/ubports-logo.svg" alt="ubports-logo">
+          </a>
+        </div>
+        <!-- Text -->
+        <p class="footer-text">UBport is a global non-profit dedicated to putting you in control of your the future of
+          the mobile for the public good.</p>
+        <!-- Social -->
+        <div class="footer-social">
+          <p class="bold">Follow Us</p>
+          <ul>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/soundcloud.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/mastodon.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/pixelfred.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/linkedin.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/facebook.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/twitter.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/youtube.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+            <!-- Icon -->
+            <li>
+              <a href="#">
+                <img src="img/icons/rss.svg" alt="social-media-icon" class="social-media-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© Copyright 2020 Ubport Technologies Inc.<span class="d-none d-xl-inline">•</span></p>
+        <p>Ubuntu and Canonical are registered trademarks of Canonical Ltd.<span class="d-none d-xl-inline">•</span></p>
+        <p class="d-none d-lg-flex">
+          <a href="#">License CC-BY-SA-4.0<span>•</span></a>
+          <a href="#">Terms & conditions<span>•</span></a>
+          <a href="#">Privacy policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (vendor) -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -203,7 +203,7 @@
   .content {
     flex: 0 0 70%;
     padding-left: 50px;
-    padding-top: 90px;
+    padding-top: 100px;
 
     @media (max-width: 991.98px) {
       padding-left: 0;
@@ -483,5 +483,14 @@
     @media (max-width: 370px) {
       padding: 40px 60px 40px 20px;
     }
+  }
+
+  .choose-device {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
   }
 }

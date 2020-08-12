@@ -1962,7 +1962,7 @@ input:focus {
   .ports .content {
     flex: 0 0 70%;
     padding-left: 50px;
-    padding-top: 90px; }
+    padding-top: 100px; }
     @media (max-width: 991.98px) {
       .ports .content {
         padding-left: 0;
@@ -2146,3 +2146,10 @@ input:focus {
     @media (max-width: 370px) {
       .ports .built-with {
         padding: 40px 60px 40px 20px; } }
+  .ports .choose-device {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0; }
