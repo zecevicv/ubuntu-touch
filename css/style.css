@@ -724,6 +724,13 @@ a:focus {
     #contributorsCollapse .header-links {
       padding: 25px 0;
       flex: 0; } }
+  @media (max-width: 767.98px) {
+    #contributorsCollapse .header-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 420px) {
+    #contributorsCollapse .header-links {
+      grid-template-columns: 1fr; } }
   #contributorsCollapse .header-links-group:not(:last-child) {
     margin-right: 60px; }
     @media (min-width: 1200px) and (max-width: 1299.98px) {
@@ -735,6 +742,10 @@ a:focus {
     @media (max-width: 991.98px) {
       #contributorsCollapse .header-links-group:not(:last-child) {
         margin-right: 30px; } }
+  @media (max-width: 767.98px) {
+    #contributorsCollapse .header-links-group {
+      margin-right: 0 !important;
+      margin-bottom: 10px !important; } }
 
 #contributorsCollapse .header-banner {
   position: relative;
