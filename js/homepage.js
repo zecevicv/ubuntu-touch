@@ -27,6 +27,7 @@ window.addEventListener('load', () => {
   new Swiper('#postsSlider', {
     spaceBetween: 35,
     autoHeight: true,
+    loop: true,
     breakpoints: {
       0: {
         slidesPerView: 1.5

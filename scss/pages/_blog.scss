@@ -51,6 +51,7 @@
     display: flex;
     overflow: hidden;
     transition: all .3s ease;
+    transform: translate3d(0, 0, 0);
 
     &__icon {
       flex: 0 0 20%;
@@ -124,7 +125,7 @@
     }
 
     &:hover {
-      transform: translateY(-2px);
+      transform: translate3d(0, -2px, 0);
       box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
 
       @media (max-width: 991.98px) {

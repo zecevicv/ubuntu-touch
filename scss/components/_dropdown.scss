@@ -12,15 +12,15 @@
     display: block;
     opacity: 0;
     visibility: hidden;
-    transform: scale(.95) translateY(-20px);
-    transition: all .15s cubic-bezier(.23,.69,.37,1.45);
+    transform: translateY(-10px);
+    transition: all .15s ease-in-out;
     backface-visibility: hidden;
   }
 
   &-menu.show {
     opacity: 1;
     visibility: visible;
-    transform: scale(1) translateY(0);
+    transform: translateY(0);
   }
 
   &-item {
