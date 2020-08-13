@@ -9,6 +9,18 @@
     margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     border: none;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.95) translateY(-20px);
+    transition: all .15s cubic-bezier(.23,.69,.37,1.45);
+    backface-visibility: hidden;
+  }
+
+  &-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateY(0);
   }
 
   &-item {
