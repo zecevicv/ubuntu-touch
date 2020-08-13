@@ -1431,17 +1431,64 @@ input:focus {
         margin-bottom: 25px; } }
   .home-devices__img {
     flex: 0 0 78%;
-    position: relative; }
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 60px; }
     @media (max-width: 991.98px) {
       .home-devices__img {
         flex: 0;
-        width: 100%; } }
-    .home-devices__img img {
-      position: relative;
-      z-index: 1; }
+        width: 100%;
+        padding-top: 40px; } }
+    @media (max-width: 767.98px) {
+      .home-devices__img {
+        padding-top: 30px; } }
+    .home-devices__img .device {
+      margin-bottom: -250px;
+      text-align: center;
+      transition: all .3s ease;
+      color: white; }
+      .home-devices__img .device p {
+        margin-bottom: 10px; }
+        @media (max-width: 575.98px) {
+          .home-devices__img .device p {
+            font-size: 12px; } }
+        @media (max-width: 370.98px) {
+          .home-devices__img .device p {
+            font-size: 10px; } }
+      .home-devices__img .device:hover {
+        transform: translateY(-20px); }
+      @media (max-width: 1199.98px) {
+        .home-devices__img .device {
+          margin-bottom: -180px; } }
       @media (max-width: 991.98px) {
-        .home-devices__img img {
-          width: 100%; } }
+        .home-devices__img .device {
+          margin-bottom: -150px; } }
+      @media (max-width: 767.98px) {
+        .home-devices__img .device {
+          margin-bottom: -120px; } }
+      @media (max-width: 575.98px) {
+        .home-devices__img .device {
+          margin-bottom: -80px; } }
+    .home-devices__img .device:nth-child(1) {
+      position: relative;
+      z-index: 6; }
+    .home-devices__img .device:nth-child(2) {
+      position: relative;
+      z-index: 5;
+      margin-left: -10%; }
+    .home-devices__img .device:nth-child(3) {
+      position: relative;
+      z-index: 4;
+      margin-left: -10%; }
+    .home-devices__img .device:nth-child(4) {
+      position: relative;
+      z-index: 3;
+      margin-left: -10%; }
+    .home-devices__img .device:nth-child(5) {
+      position: relative;
+      z-index: 2;
+      margin-left: -10%; }
     .home-devices__img::after {
       position: absolute;
       top: 0;

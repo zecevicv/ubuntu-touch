@@ -124,19 +124,86 @@
   &__img {
     flex: 0 0 78%;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 60px;
 
     @media (max-width: 991.98px) {
       flex: 0;
       width: 100%;
+      padding-top: 40px;
     }
 
-    img {
-      position: relative;
-      z-index: 1;
+    @media (max-width: 767.98px) {
+      padding-top: 30px;
+    }
+
+    .device {
+      margin-bottom: -250px;
+      text-align: center;
+      transition: all .3s ease;
+      color: white;
+
+      p {
+        margin-bottom: 10px;
+
+        @media (max-width: 575.98px) {
+          font-size: 12px;
+        }
+
+        @media (max-width: 370.98px) {
+          font-size: 10px;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-20px);
+      }
+
+      @media (max-width: 1199.98px) {
+        margin-bottom: -180px;
+      }
 
       @media (max-width: 991.98px) {
-        width: 100%;
+        margin-bottom: -150px;
       }
+
+      @media (max-width: 767.98px) {
+        margin-bottom: -120px;
+      }
+
+      @media (max-width: 575.98px) {
+        margin-bottom: -80px;
+      }
+    }
+
+    .device:nth-child(1) {
+      position: relative;
+      z-index: 6;
+    }
+
+    .device:nth-child(2) {
+      position: relative;
+      z-index: 5;
+      margin-left: -10%;
+    }
+
+    .device:nth-child(3) {
+      position: relative;
+      z-index: 4;
+      margin-left: -10%;
+    }
+
+    .device:nth-child(4) {
+      position: relative;
+      z-index: 3;
+      margin-left: -10%;
+    }
+
+    .device:nth-child(5) {
+      position: relative;
+      z-index: 2;
+      margin-left: -10%;
     }
 
     &::after {
