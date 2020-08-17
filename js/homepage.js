@@ -50,3 +50,14 @@ window.addEventListener('load', () => {
     }
   });
 });
+
+/* #AOS Init
+  ======================================================= */
+AOS.init({
+  startEvent: 'load',
+  duration: 700,
+  easing: 'ease',
+  once: true,
+  offset: 200,
+  disable: window.innerWidth < 992
+});

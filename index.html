@@ -9,6 +9,7 @@
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
 
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
@@ -442,14 +443,16 @@
   </header>
 
   <!-- Hero -->
-  <div class="home-hero">
+  <div class="home-hero" id="homeHero">
     <div class="container">
       <!-- Text -->
       <div class="home-hero__text">
-        <h1 class="h2">We building a better alternative operating system for your smartphone.</h1>
-        <p>We are Innovative and community driven.</p>
-        <button class="btn btn-primary">Check Devices</button>
-        <div class="home-hero__visits">
+        <h1 class="h2" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#homeHero">We building a better alternative operating system for your smartphone.</h1>
+        <p data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#homeHero">We are Innovative and community driven.</p>
+        <div data-aos="fade-up" data-aos-delay="450" data-aos-anchor="#homeHero">
+          <button class="btn btn-primary">Check Devices</button>
+        </div>
+        <div class="home-hero__visits" data-aos="fade-up" data-aos-delay="600" data-aos-anchor="#homeHero">
           <h3 class="h2">+1,500</h3>
           <h3 class="h4 light ml-4">Users visited our download section in the last 7 days.</h3>
         </div>
@@ -709,14 +712,14 @@
   </div>
 
   <!-- Media -->
-  <div class="home-media">
+  <div class="home-media" id="homeMedia1">
     <div class="container">
       <!-- Text -->
       <div class="home-media__text">
-        <h2 class="h1">Fully Transparent OS</h2>
-        <a href="#" class="link">>> Check our repo</a>
-        <p>Developed as an open source project, Ubuntu Touch contains no hidden nuts and bolts.</p>
-        <p>Your data are kept exactly where you want it: on your device, and nowhere else unless you explicitly ask for
+        <h2 class="h1" data-aos="fade-right" data-aos-anchor="#homeMedia1">Fully Transparent OS</h2>
+        <a href="#" class="link" data-aos="fade-right" data-aos-anchor="#homeMedia1" data-aos-delay="150">>> Check our repo</a>
+        <p data-aos="fade-right" data-aos-anchor="#homeMedia1" data-aos-delay="300">Developed as an open source project, Ubuntu Touch contains no hidden nuts and bolts.</p>
+        <p data-aos="fade-right" data-aos-anchor="#homeMedia1" data-aos-delay="450">Your data are kept exactly where you want it: on your device, and nowhere else unless you explicitly ask for
           it.</p>
       </div>
       <!-- Img -->
@@ -730,15 +733,15 @@
   </div>
 
   <!-- Media -->
-  <div class="home-media home-media--alt">
+  <div class="home-media home-media--alt" id="homeMedia2">
     <div class="container">
       <!-- Text -->
       <div class="home-media__text">
-        <h2 class="h1">Community Comit Together.</h2>
-        <a href="#" class="link">>> Check community repo</a>
-        <p>Rather than being developed by one of the richest companies in the world, Ubuntu touch is fully developed by
+        <h2 class="h1" data-aos="fade-left" data-aos-anchor="#homeMedia2">Community Comit Together.</h2>
+        <a href="#" class="link" data-aos="fade-left" data-aos-anchor="#homeMedia2" data-aos-delay="150">>> Check community repo</a>
+        <p data-aos="fade-left" data-aos-anchor="#homeMedia2" data-aos-delay="300">Rather than being developed by one of the richest companies in the world, Ubuntu touch is fully developed by
           the community of users.</p>
-        <p>As a consequence the system is developed with the sole purpose of giving the best and most secure user
+        <p data-aos="fade-left" data-aos-anchor="#homeMedia2" data-aos-delay="450">As a consequence the system is developed with the sole purpose of giving the best and most secure user
           experience possible, while traditional systems balance these concern against profit.</p>
       </div>
       <!-- Img -->
@@ -929,6 +932,7 @@
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="node_modules/aos/dist/aos.js"></script>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
