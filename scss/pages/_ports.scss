@@ -161,7 +161,7 @@
           left: 50%;
           width: 200%;
           height: 100%;
-          background-color: $off-white;
+          background-color: $gray-light;
           z-index: -1;
           transform: translateX(-50%);
         }
@@ -207,7 +207,7 @@
       right: 0;
       width: 1px;
       height: 150%;
-      background-color: $off-white;
+      background-color: $gray-light;
       z-index: -1;
 
       @media (max-width: 991.98px) {
