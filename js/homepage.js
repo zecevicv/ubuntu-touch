@@ -3,9 +3,6 @@ window.addEventListener('load', () => {
   ======================================================= */
   new Swiper('#contributorsSlider', {
     spaceBetween: 25,
-    autoplay: {
-      delay: 5000,
-    },
     breakpoints: {
       0: {
         slidesPerView: 1.5
@@ -31,9 +28,6 @@ window.addEventListener('load', () => {
     spaceBetween: 35,
     autoHeight: true,
     loop: true,
-    autoplay: {
-      delay: 5000,
-    },
     breakpoints: {
       0: {
         slidesPerView: 1.5
